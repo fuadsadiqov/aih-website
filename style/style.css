@@ -4,7 +4,7 @@ header{
     height: 60rem;
 }
 .bg{
-    background: url(./assets/img/headder-bg.png) no-repeat;
+    background: url(../assets/img/headder-bg.png) no-repeat;
     height: 60rem;
     background-size: cover;
     background-position: center;
@@ -281,13 +281,13 @@ header{
     justify-content: space-between;
 }
 .visions .visions-info{
-    background: var(--lightblue) url(./assets/img/visions-bg.svg) no-repeat;
+    background: var(--lightblue) url(../assets/img/visions-bg.svg) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    padding: 2rem;
+    padding: 3rem;
 }
 .visions .visions-info .visions-title h2{
     font-size: 2.8rem;
@@ -303,6 +303,7 @@ header{
 }
 .visions-right img{
     width: 100%;
+    height: 100%;
 }
 @media (max-width: 991px){
     .news .news-wrapper,
