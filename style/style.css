@@ -369,3 +369,50 @@ header{
     color: var(--gray);
     font-size: 1.3rem;
 }
+/* Portfel */
+.portfel .container > .title{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.8rem 0;
+    color: var(--second-black);
+}
+.portfel .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.portfel .wrapper .item{
+    height: 10rem;
+    width: 100%;
+    border-radius: 2.7rem;
+    background-color: var(--lightgray);
+    display: flex;
+    align-items: center;
+    padding: 0 3.75rem;
+}
+.portfel .wrapper .item .title{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--lightblue);
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    height: 60%;
+}
+.portfel .wrapper .item .title.left{
+    border-right: 1px solid var(--lightblue);
+    padding-right: 3.75rem;
+}
+.portfel .wrapper .item .title.right{
+    border-left: 1px solid var(--lightblue);
+    padding-left: 3.75rem;
+}
+.portfel .item .item-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.portfel .item .item-img img{
+    max-height: 5rem;   
+    object-fit: cover;
+}
