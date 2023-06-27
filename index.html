@@ -10,6 +10,7 @@
 <body>
     <!-- Header -->
     <header class="header">
+        <div class="bg"></div>
         <div class="container-fluid">
             <div class="header-top">
                 <div class="top-left">
@@ -17,7 +18,7 @@
                 </div>
                 <div class="top-right">
                     <img src="./assets/img/search.svg" alt="">
-                    <select>
+                    <select class="language-option">
                         <option value="AZ">AZ</option>
                         <option value="EN">EN</option>
                     </select>
@@ -31,9 +32,9 @@
             </div>
             <div class="header-bottom">
                 <ul id="mobileList">
-                    <li>Haqqımızda</li>
+                    <li>Haqqımızda <img class="arrow-down" src="./assets/img/arrow-down.svg" alt=""></li>
                     <li>Dövlət müəssisələri</li>
-                    <li>Media</li>
+                    <li>Media <img class="arrow-down" src="./assets/img/arrow-down.svg" alt=""></li>
                     <li>Karyera</li>
                     <li>Əlaqə</li>
                     <select class="mobile-language">
@@ -44,10 +45,119 @@
             </div>
         </div>
         <div class="mobile-nav" id="mobileNav"></div>
+        <div id="banner" class="banner">
+            <div class="container">
+                <div class="banner-top">
+                    <h1>Azərbaycan İnvestisiya Holdinqi</h1>
+                </div>
+                <div class="banner-text">
+                   <p>
+                    Azərbaycan İnvestisiya Holdinqi onun idarəetməsinə verilmiş 
+                    dövlət şirkətlərinin Azərbaycan hökumətinin milli sosial-iqtisadi 
+                    prioritetləri üzərində qurulmuş vahid prinsiplər əsasında idarə 
+                    edilməsi məqsədilə təsis edilmiş publik hüquqi şəxsdir.
+                   </p>
+                </div>
+                <div class="banner-bottom">
+                    <button class="btn btn-blue">Haqqımızda</button>
+                    <button class="btn btn-white">Əlaqə</button>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- News -->
     <div id="mainPage"> 
-
+        <div class="news">
+            <div class="container">
+                    <div class="news-wrapper">
+                        <div class="news-left">
+                            <img src="./assets/img/news.png" alt="">
+                        </div>
+                        <div class="news-right">
+                            <div class="news-name">Xəbər</div>
+                            <div class="news-title">
+                                <h1>AZAL və “Boeing” 8 ədəd “787-8 Dreamliner” təyyarəsinin tədarükünə dair razılıq əldə edib</h1>
+                            </div>
+                            <div class="news-date">10 May 2023  12:36</div>
+                            <div class="news-info">
+                                <p>AZAL və “Boeing” 8 ədəd “787-8 Dreamliner” təyyarəsinin tədarükünə dair razılıq əldə edib.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Last News -->
+        <div class="last-news">
+            <div class="container">
+                <div class="news-title">
+                    <h4>Son media</h4>
+                    <a href="">Bütün media <img src="./assets/img/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="./assets/img/news-1.png" alt="">
+                        </div>
+                        <div class="news-date">
+                            <p>10 May 2023</p>
+                            <div class="news-name">
+                                Press-reliz
+                            </div> 
+                        </div>
+                        <div class="news-text">
+                            <span>Nazirlər Kabinetində Bakı şəhərində nəqliyyat sahəsinin vəziyyətinə həsr olunan işçi</span>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="./assets/img/news-2.png" alt="">
+                        </div>
+                        <div class="news-date">
+                            <p>10 May 2023</p>
+                            <div class="news-name">
+                                Xəbər
+                            </div> 
+                        </div>
+                        <div class="news-text">
+                            <span>AİH-də “Boston Consulting Group” şirkətinin idarəedici direktoru və baş tərəfdaşı ilə</span>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="./assets/img/news-3.png" alt="">
+                        </div>
+                        <div class="news-date">
+                            <p>10 May 2023</p>
+                            <div class="news-name">
+                                Press-reliz
+                            </div> 
+                        </div>
+                        <div class="news-text">
+                            <span>“ASCO istiqrazları”nın təqdimat mərasimi keçirilib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="visions">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="visions-info">
+                        <div class="visions-title">
+                            <h2>Missiyamız</h2>
+                            <div class="visions-text">
+                                <p>
+                                    AİH-nin mədəni dəyərlərini bölüşən peşəkar və məqsədyönlü 
+                                    komanda tərəfindən həyata keçirilən şəffaf investisiya 
+                                    prosesləri vasitəsilə Azərbaycanın uzunmüddətli inkişafına və 
+                                    firavanlığının artımına xidmət etmək.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>

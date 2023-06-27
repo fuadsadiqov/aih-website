@@ -1,13 +1,15 @@
 const hamburgerMenu = document.getElementById('hamburgerMenu');
 const mobileNav = document.getElementById('mobileNav');
-const mobileList = document.getElementById('mobileList');
+const navList = document.getElementById('mobileList');
 const wholePage = document.getElementById('mainPage');
+const banner = document.getElementById('banner');
 
 hamburgerMenu.addEventListener('click', () => {
   const isNavVisible = mobileNav.style.display === 'flex';
 
   hamburgerMenu.classList.toggle('open')
   mobileNav.style.display = isNavVisible ? 'none' : 'flex';
-  mobileList.style.display = isNavVisible ? 'none' : 'flex';
-  wholePage.style.display = isNavVisible ? 'none' : 'block';
+  navList.style.display = isNavVisible ? 'none' : 'flex';
+  banner.style.display = isNavVisible ? 'flex' : 'none';
+  wholePage.style.display = isNavVisible ? 'block' : 'none';
 }); 
