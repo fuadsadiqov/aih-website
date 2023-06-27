@@ -18,6 +18,28 @@ hamburgerMenu.addEventListener('click', () => {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    // When window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // When window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // When window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+    // Add more breakpoints as needed
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
