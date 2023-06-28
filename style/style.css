@@ -2,6 +2,7 @@
 header {
   color: var(--white);
   height: 60rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 .bg {
   background: url(../assets/img/headder-bg.png) no-repeat;
@@ -42,15 +43,17 @@ header {
   outline: none;
   padding-left: 0.2rem;
   -webkit-appearance: none;
+  padding: 1.5rem;
 }
 .header-top .top-right select option {
   color: var(--black);
+
 }
 .header-bottom ul {
   display: flex;
   gap: 3rem;
   padding: 1.2rem 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -157,17 +160,22 @@ header {
     display: flex !important;
   }
 }
+#mainPage{
+  overflow-x: hidden;
+}
 /* Banner */
 .banner {
   padding-top: 3.2rem;
   color: var(--white);
+  font-family: 'Euclid Circular A', sans-serif;
 }
 .banner-top h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .banner-text p {
   max-width: 60rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   line-height: 1.5em;
   padding: 1.7rem 0;
 }
@@ -177,9 +185,14 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
 }
+.banner-bottom button{
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+}
 /* News */
 .news {
+  overflow-x: hidden !important;
   padding-top: 7.2rem;
+  font-family: 'Euclid Circular A', sans-serif !important; 
 }
 .news .news-wrapper {
   display: flex;
@@ -204,9 +217,10 @@ header {
   width: 6.6rem;
 }
 .news .news-right .news-title {
-  line-height: 2.7em;
+  line-height: 1.3em;
   padding: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
   color: var(--second-black);
 }
 .news .news-right .news-date,
@@ -218,9 +232,13 @@ header {
 }
 .news .news-right .news-info {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  max-width: 45rem;
 }
 /* Last News */
+.last-news{
+  font-family: 'Euclid Circular A', sans-serif !important;
+}
 .last-news .news-title {
   display: flex;
   justify-content: space-between;
@@ -235,15 +253,15 @@ header {
   align-items: center;
   font-size: 1.2rem;
   font-weight: 600;
+  color: var(--second-black);
 }
 .last-news .news-title img {
   width: 1.3rem;
   margin-left: 0.5rem;
 }
 .last-news .news-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 .last-news .news-item {
@@ -278,6 +296,7 @@ header {
 }
 /* Visions */
 .visions {
+  font-family: 'Segoe UI', Arial, sans-serif;
   padding-top: 4.7rem;
   color: var(--white);
 }
@@ -341,6 +360,7 @@ header {
 }
 /* About */
 .about {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
   padding: 2.5rem 0;
   background-color: var(--lightgray);
   color: var(--second-black);
@@ -356,10 +376,9 @@ header {
   font-size: 1.4rem;
 }
 .about .wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding-top: 1.5rem;
 }
 .about .wrapper .item {
@@ -375,8 +394,12 @@ header {
   font-size: 1.3rem;
 }
 /* Portfel */
+.portfel{
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+}
 .portfel .container > .title {
   text-align: center;
+  font-family: 'Euclid Circular A', sans-serif;
   font-size: 1.5rem;
   padding: 2.8rem 0;
   color: var(--second-black);
@@ -397,7 +420,7 @@ header {
 }
 .portfel .wrapper .item .title {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--lightblue);
   text-align: center;
   display: inline-flex;
@@ -442,6 +465,7 @@ header {
 }
 .link {
   padding: 5rem 0 2.5rem 0;
+  font-family: 'Euclid Circular A', sans-serif;
 }
 .swiper {
   width: 100%;
@@ -476,7 +500,7 @@ header {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: var(--swiper-navigation-top-offset, 50%);
+  top: 3.4rem !important;
   width: 1.5rem !important;
   height: 1.5rem !important;
   margin-top: 0rem !important;
@@ -492,6 +516,7 @@ header {
   background-color: var(--lightblue);
   color: var(--white);
   padding-bottom: 3rem;
+  font-family: 'Segoe UI', sans-serif;
 }
 .footer .wrapper{
   display: flex;
@@ -523,9 +548,15 @@ header {
   font-size: 1.3rem;
   font-weight: 200;
   letter-spacing: 0.06rem;
-  opacity: 0.7;
 }
-.footer .wrapper .item:last-child p{
+.footer .wrapper .item ul li{
+  opacity: 0.6;
+}
+.footer .wrapper .item ul li:hover{
+  opacity: 1;
+}
+.footer .wrapper .item:last-child a{
+  display: block;
   padding-bottom: 1rem;
   font-size: 1.5rem;
 }

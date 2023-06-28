@@ -3,12 +3,7 @@
   font-style: normal;
   src: local('Segoe UI Regular'), url('./assets/Segoue-UI/Segoe UI.woff') format('woff');
   }
-  @font-face {
-    font-family: 'Euclid Circular';
-    src: url('./assets/Euclid-Circular/Euclid-Circular-A-Regular.ttf') format('ttf'),
-  }
 *{
-    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,4 +24,6 @@ ul{
 }
 a{
   text-decoration: none;
+  color: var(--white);
 }
+
