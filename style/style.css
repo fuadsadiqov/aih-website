@@ -82,7 +82,7 @@ header {
   display: none;
   transform: translateY(1px);
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.5rem;
   cursor: pointer;
   background-color: transparent;
 }
@@ -100,23 +100,23 @@ header {
   display: none;
 }
 .hamburger-menu.open > span:nth-child(3){
-  transform: translate(-1px, -5px) rotate(-45deg);
+  transform: translate(-1px, -4px) rotate(-45deg);
 }
-.dropdown{
+.dropdown {
   position: absolute;
   top: 0.5rem;
   left: 0;
   display: none;
   background-color: var(--lightblue);
   color: var(--white);
-  opacity: 1;
+  opacity: 0;
   max-width: 100%;
   width: 100%;
   gap: 5rem;
   align-content: center;
   padding: 5rem 2rem 0 2rem;
   z-index: -1;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 7px 7px;
 }
 .dropdown h4{
   display: flex;
@@ -125,9 +125,6 @@ header {
 .dropdown ul{
   display: flex;
   gap: 4rem;
-}
-.header-bottom ul li:hover .dropdown{
-  display: flex;
 }
 @media only screen and (max-width: 768px) {
   .header-top .top-left img {
