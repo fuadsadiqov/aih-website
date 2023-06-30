@@ -6,7 +6,6 @@ const banner = document.getElementById('banner');
 
 hamburgerMenu.addEventListener('click', () => {
   const isNavVisible = mobileNav.style.display === 'flex';
-
   hamburgerMenu.classList.toggle('open')
   mobileNav.style.display = isNavVisible ? 'none' : 'flex';
   navList.style.display = isNavVisible ? 'none' : 'flex';
@@ -16,9 +15,8 @@ hamburgerMenu.addEventListener('click', () => {
 // Responsive dropdown
 function toggleDropdownOnClick() {
   const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
-  dropdownItems.forEach(item => {
+  dropdownItems.forEach(item => { 
     item.addEventListener('click', () => {
-      console.log("Clicked");
       item.classList.toggle('active');
     });
   });
