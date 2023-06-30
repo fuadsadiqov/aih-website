@@ -142,9 +142,17 @@ header {
     text-align: center;
     gap: 2rem;
   }
-  .header-bottom ul li{
+  .header-bottom ul > li{
     align-items: center;
     flex-direction: column;
+    color: #173491;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .header-bottom ul li .dropdown-menu ul li a{
+    color: #173491;
+    font-weight: 500;
+    font-size: 1.5rem;
   }
   .header-bottom ul .mobile-language{
     display: block;
@@ -173,7 +181,6 @@ header {
   .dropdown-menu{
     position: relative;
     background-color: transparent;
-    color: var(--lightblue);
   }
   .nav-item.active + .dropdown-menu{
     display: flex;
@@ -185,6 +192,7 @@ header {
   .dropdown-menu > ul{
     position: relative;
     flex-direction: column;
+    font-size: 1.5rem;
   }
   .dropdown-menu a{
     color: var(--black);
