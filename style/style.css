@@ -1,9 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 /* Header */
 header {
   color: var(--white);
   height: 60rem;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 .bg {
   background: url(../assets/img/headder-bg.png) no-repeat;
@@ -58,11 +58,11 @@ header {
   position: relative;
   padding-left: 1rem;
 }
-.header-bottom ul li{
+.header-bottom ul li {
   display: flex;
   align-items: center;
 }
-.header-bottom ul .nav-item{
+.header-bottom ul .nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,13 +91,13 @@ header {
   transition: 0.1s ease-in-out;
   border-radius: 5px;
 }
-.hamburger-menu.open > span:nth-child(1){
+.hamburger-menu.open > span:nth-child(1) {
   transform: translate(0, 3px) rotate(45deg);
 }
-.hamburger-menu.open > span:nth-child(2){
+.hamburger-menu.open > span:nth-child(2) {
   display: none;
 }
-.hamburger-menu.open > span:nth-child(3){
+.hamburger-menu.open > span:nth-child(3) {
   transform: translate(-1px, -4px) rotate(-45deg);
 }
 .dropdown-menu {
@@ -115,15 +115,15 @@ header {
   z-index: -1;
   border-radius: 0 0 7px 7px;
 }
-.dropdown-menu h4{
+.dropdown-menu h4 {
   display: flex;
   align-items: center;
 }
-.dropdown-menu ul{
+.dropdown-menu ul {
   display: flex;
   gap: 4rem;
 }
-.dropdown-menu a{
+.dropdown-menu a {
   color: var(--white);
 }
 @media only screen and (max-width: 768px) {
@@ -142,27 +142,31 @@ header {
     text-align: center;
     gap: 2rem;
   }
-  .header-bottom ul > li{
+  .header-bottom ul > li {
     align-items: center;
     flex-direction: column;
     color: #173491;
     font-weight: 600;
     font-size: 2rem;
   }
-  .header-bottom ul li .dropdown-menu ul li a{
+  .header-bottom ul li .dropdown-menu ul li a {
     color: #173491;
     font-weight: 500;
     font-size: 1.5rem;
   }
-  .header-bottom ul .mobile-language{
+  .header-bottom ul .mobile-language {
     display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .header-bottom ul .nav-item + .dropdown-menu ul,
-  .header-bottom ul .nav-item + .dropdown-menu{
+  .header-bottom ul .nav-item + .dropdown-menu {
     gap: 0;
     padding: 0;
   }
-  .hamburger-menu{
+  .hamburger-menu {
     display: flex;
   }
   .language-option,
@@ -178,23 +182,23 @@ header {
   .arrow-down {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
   }
-  .dropdown-menu{
+  .dropdown-menu {
     position: relative;
     background-color: transparent;
   }
-  .nav-item.active + .dropdown-menu{
+  .nav-item.active + .dropdown-menu {
     display: flex;
     flex-direction: column;
   }
   .nav-item.active .arrow-down {
     rotate: 180deg;
   }
-  .dropdown-menu > ul{
+  .dropdown-menu > ul {
     position: relative;
     flex-direction: column;
     font-size: 1.5rem;
   }
-  .dropdown-menu a{
+  .dropdown-menu a {
     color: var(--black);
   }
 }
@@ -210,23 +214,23 @@ header {
     transform: translateY(-5px);
     transition: 0.3s ease-in-out;
   }
-  .dropdown-menu ul li{
+  .dropdown-menu ul li {
     padding-left: 7px;
   }
-  .dropdown-menu ul li:hover{
+  .dropdown-menu ul li:hover {
     transform: translateX(10px);
     transition: 0.4s ease-in-out;
     border-left: 1px solid #ccc;
   }
 }
-#mainPage{
+#mainPage {
   overflow-x: hidden;
 }
 /* Banner */
 .banner {
   padding-top: 3.2rem;
   color: var(--white);
-  font-family: 'Euclid Circular A', sans-serif;
+  font-family: "Euclid Circular A", sans-serif;
 }
 .banner-top h1 {
   font-size: 3.5rem;
@@ -244,14 +248,14 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.banner-bottom button{
-  font-family: 'Segoe UI', Arial, sans-serif !important;
+.banner-bottom button {
+  font-family: "Segoe UI", Arial, sans-serif !important;
 }
 /* News */
 .news {
   overflow-x: hidden !important;
   padding-top: 7.2rem;
-  font-family: 'Euclid Circular A', sans-serif !important; 
+  font-family: "Euclid Circular A", sans-serif !important;
 }
 .news .news-wrapper {
   display: flex;
@@ -295,8 +299,8 @@ header {
   max-width: 45rem;
 }
 /* Last News */
-.last-news{
-  font-family: 'Euclid Circular A', sans-serif !important;
+.last-news {
+  font-family: "Euclid Circular A", sans-serif !important;
 }
 .last-news .news-title {
   display: flex;
@@ -325,7 +329,9 @@ header {
 }
 .last-news .news-item {
   max-width: 38rem;
+  max-height: 40rem;
   width: 100%;
+  height: 100%;
 }
 .last-news .news-item .news-img img {
   max-width: 38rem;
@@ -355,7 +361,7 @@ header {
 }
 /* Visions */
 .visions {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   padding-top: 4.7rem;
   color: var(--white);
 }
@@ -419,7 +425,7 @@ header {
 }
 /* About */
 .about {
-  font-family: 'Segoe UI', Arial, sans-serif !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
   padding: 2.5rem 0;
   background-color: var(--lightgray);
   color: var(--second-black);
@@ -453,12 +459,12 @@ header {
   font-size: 1.3rem;
 }
 /* Portfel */
-.portfel{
-  font-family: 'Segoe UI', Arial, sans-serif !important;
+.portfel {
+  font-family: "Segoe UI", Arial, sans-serif !important;
 }
 .portfel .container > .title {
   text-align: center;
-  font-family: 'Euclid Circular A', sans-serif;
+  font-family: "Euclid Circular A", sans-serif;
   font-size: 1.5rem;
   padding: 2.8rem 0;
   color: var(--second-black);
@@ -524,7 +530,7 @@ header {
 }
 .link {
   padding: 5rem 0 2.5rem 0;
-  font-family: 'Euclid Circular A', sans-serif;
+  font-family: "Euclid Circular A", sans-serif;
 }
 .swiper {
   width: 100%;
@@ -551,9 +557,8 @@ header {
 }
 .swiper-slide .item-img img {
   display: block;
-  width: 100%;
-  max-height: 6rem;
-  height: 100%;
+  width: 7rem;
+  height: 6rem;
   object-fit: cover;
 }
 .swiper-button-next,
@@ -571,38 +576,38 @@ header {
   color: var(--black) !important;
 }
 /* Footer */
-.footer{
+.footer {
   background-color: var(--lightblue);
   color: var(--white);
   padding-bottom: 3rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
-.footer a{
+.footer a {
   color: var(--white);
 }
-.footer .wrapper{
+.footer .wrapper {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
   padding: 5rem 0 3rem 0;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
-.footer .wrapper .item .footer-logo img{
+.footer .wrapper .item .footer-logo img {
   max-width: 20rem;
   width: 100%;
 }
-.footer .wrapper .item .social-media{
+.footer .wrapper .item .social-media {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
   padding-top: 2rem;
 }
-.footer .wrapper .item p{
+.footer .wrapper .item p {
   font-size: 1.6rem;
   font-weight: 300;
 }
-.footer .wrapper .item ul{
+.footer .wrapper .item ul {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -611,21 +616,21 @@ header {
   font-weight: 200;
   letter-spacing: 0.06rem;
 }
-.footer .wrapper .item ul li{
+.footer .wrapper .item ul li {
   opacity: 0.6;
 }
-.footer .wrapper .item ul li:hover{
+.footer .wrapper .item ul li:hover {
   opacity: 1;
 }
-.footer .wrapper .item:last-child a{
+.footer .wrapper .item:last-child a {
   display: block;
   padding-bottom: 1rem;
   font-size: 1.5rem;
 }
-.footer .copyright{
+.footer .copyright {
   text-align: center;
   font-weight: 300;
   padding-top: 3rem;
   font-size: 1.2rem;
-  font-family: 'Euclid Circular A', sans-serif;
+  font-family: "Euclid Circular A", sans-serif;
 }
