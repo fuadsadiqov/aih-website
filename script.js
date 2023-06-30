@@ -13,32 +13,47 @@ hamburgerMenu.addEventListener('click', () => {
   banner.style.display = isNavVisible ? 'flex' : 'none';
   wholePage.style.display = isNavVisible ? 'block' : 'none';
 }); 
-
+// Responsive dropdown
+function toggleDropdownOnClick() {
+  const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
+      console.log("Clicked");
+      item.classList.toggle('active');
+    });
+  });
+}
+function toggleDropdownOnResize() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    toggleDropdownOnClick();
+  } else {
+    const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
+    dropdownItems.forEach(item => {
+      item.removeEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  }
+}
+toggleDropdownOnResize();
+window.addEventListener('resize', toggleDropdownOnResize);
 // Swiper
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   breakpoints: {
-    // When window width is >= 320px
     200: {
       slidesPerView: 1,
-      spaceBetween: 10
     },
-    // When window width is >= 480px
     480: {
       slidesPerView: 2,
-      spaceBetween: 20
     },
-    // When window width is >= 640px
     640: {
       slidesPerView: 3,
-      spaceBetween: 30
     },
     991: {
       slidesPerView: 4,
-      spaceBetween: 30
     }
-    // Add more breakpoints as needed
   },
   navigation: {
     nextEl: ".swiper-button-next",

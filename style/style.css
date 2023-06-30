@@ -60,17 +60,12 @@ header {
   position: relative;
   padding-left: 1rem;
 }
-.header-bottom ul li {
+.header-bottom ul .nav-item{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.1rem;
   text-align: center;
-}
-.header-bottom ul li:hover .arrow-down {
-  rotate: 180deg;
-  transform: translateY(-5px);
-  transition: 0.1s ease-in-out;
 }
 .mobile-language,
 .mobile-nav {
@@ -102,14 +97,13 @@ header {
 .hamburger-menu.open > span:nth-child(3){
   transform: translate(-1px, -4px) rotate(-45deg);
 }
-.dropdown {
+.dropdown-menu {
   position: absolute;
   top: 0.5rem;
   left: 0;
   display: none;
   background-color: var(--lightblue);
   color: var(--white);
-  opacity: 0;
   max-width: 100%;
   width: 100%;
   gap: 5rem;
@@ -118,37 +112,49 @@ header {
   z-index: -1;
   border-radius: 0 0 7px 7px;
 }
-.dropdown h4{
+.dropdown-menu h4{
   display: flex;
   align-items: center;
 }
-.dropdown ul{
+.dropdown-menu ul{
   display: flex;
   gap: 4rem;
 }
+
 @media only screen and (max-width: 768px) {
   .header-top .top-left img {
     width: 13rem;
   }
-  .header-bottom ul {
+  .header-bottom > ul {
     display: none;
     position: absolute;
     flex-direction: column;
     top: 50%;
     left: 50%;
-    font: 2.5rem;
+    font-size: 2rem;
     transform: translate(-50%, -50%);
     color: var(--black);
     text-align: center;
+    gap: 2rem;
   }
   .header-bottom ul .mobile-language{
     display: block;
+  }
+  .header-bottom ul .nav-item{
+    flex-direction: column;
+  }
+  .header-bottom ul .nav-item .dropdown-menu{
+    padding: 0;
+  }
+  .header-bottom ul .nav-item .dropdown-menu ul{
+    gap: 0;
+    padding: 0;
   }
   .hamburger-menu{
     display: flex;
   }
   .language-option,
-  .dropdown h4 {
+  .dropdown-menu h4 {
     display: none;
   }
   .mobile-nav {
@@ -160,19 +166,34 @@ header {
   .arrow-down {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
   }
-  .dropdown{
-    display: none;
+  .dropdown-menu{
     position: relative;
     background-color: transparent;
     color: var(--black);
   }
-  .dropdown ul{
+  .nav-item.active .dropdown-menu{
     display: flex;
+    flex-direction: column;
+  }
+  .nav-item.active .arrow-down {
+    rotate: 180deg;
+  }
+  .dropdown-menu > ul{
+    position: relative;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 768px) {
   .header-bottom ul {
     display: flex !important;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  .header-bottom ul li:hover .arrow-down {
+    rotate: 180deg;
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
   }
 }
 #mainPage{
