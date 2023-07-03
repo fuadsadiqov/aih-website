@@ -6,7 +6,7 @@ header {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 .bg {
-  background: url(../assets/img/headder-bg.png) no-repeat;
+  background: url(../assets/img/logo/headder-bg.png) no-repeat;
   height: 60rem;
   background-size: cover;
   background-position: center;
@@ -33,7 +33,7 @@ header {
   gap: 1.8rem;
 }
 .header-top .top-right img {
-  width: 1.5rem;
+  width: 1.6rem;
   cursor: pointer;
 }
 .header-top .top-right select {
@@ -44,7 +44,7 @@ header {
   outline: none;
   padding-left: 0.2rem;
   -webkit-appearance: none;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
 }
 .header-top .top-right select option {
   color: var(--black);
@@ -368,9 +368,10 @@ header {
 .visions .wrapper {
   display: flex;
   justify-content: space-between;
+  height: 38rem;
 }
 .visions .visions-info {
-  background: var(--lightblue) url(../assets/img/visions-bg.svg) no-repeat;
+  background: var(--lightblue) url(../assets/img/logo/visions-bg.svg) no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,6 +394,7 @@ header {
 .visions-right img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 991px) {
   .news .news-wrapper,
@@ -506,8 +508,9 @@ header {
   justify-content: space-evenly;
 }
 .portfel .item .item-img img {
-  max-height: 5.5rem;
-  object-fit: cover;
+  object-fit: contain;
+  height: 5rem;
+  width: 12rem;
 }
 @media (max-width: 768px) {
   .portfel .wrapper .item:nth-child(odd) .title,
@@ -524,7 +527,8 @@ header {
     flex-direction: column-reverse;
   }
   .portfel .item .item-img img {
-    height: 3.5rem;
+    height: 3rem;
+    width: 7rem;
     margin-bottom: 1rem;
   }
 }
@@ -559,6 +563,7 @@ header {
   display: block;
   width: 7rem;
   height: 6rem;
+  border-radius: 1rem;
   object-fit: cover;
 }
 .swiper-button-next,
