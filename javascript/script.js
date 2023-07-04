@@ -17,6 +17,9 @@ hamburgerMenu.addEventListener('click', () => {
 searchIcon.addEventListener('click', () => {
   searchIcon.classList.toggle('active')
 })
+closeSearchIcon.addEventListener('click', () => {
+  searchIcon.classList.remove('active')
+})
 // Responsive dropdown
 function toggleDropdownOnClick() {
   const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
