@@ -3,6 +3,8 @@ const mobileNav = document.getElementById('mobileNav');
 const navList = document.getElementById('mobileList');
 const wholePage = document.getElementById('mainPage');
 const banner = document.getElementById('banner');
+const searchIcon = document.getElementById('search')
+const closeSearchIcon = document.getElementById('closeSearch')
 
 hamburgerMenu.addEventListener('click', () => {
   const isNavVisible = mobileNav.style.display === 'flex';
@@ -11,7 +13,10 @@ hamburgerMenu.addEventListener('click', () => {
   navList.style.display = isNavVisible ? 'none' : 'flex';
   banner.style.display = isNavVisible ? 'flex' : 'none';
   wholePage.style.display = isNavVisible ? 'block' : 'none';
-}); 
+});
+searchIcon.addEventListener('click', () => {
+  searchIcon.classList.toggle('active')
+})
 // Responsive dropdown
 function toggleDropdownOnClick() {
   const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
@@ -36,4 +41,4 @@ function toggleDropdownOnResize() {
 toggleDropdownOnResize();
 window.addEventListener('resize', toggleDropdownOnResize);
 // AOS
-AOS.init();
+AOS.init({once: true});

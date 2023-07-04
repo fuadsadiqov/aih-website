@@ -77,6 +77,23 @@ header {
 .mobile-nav {
   display: none;
 }
+.search-box{
+  position: relative;
+}
+.search-input{
+  position: absolute;
+  width: 0;
+  top: 100%;
+  border: none;
+  right: 0;
+  padding: 0;
+  border-radius: 0.2rem;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.search-icon.active + .search-input{
+  width: 17rem;
+  padding: 1rem 2rem;
+}
 /* Hamburger menu active style */
 .hamburger-menu {
   position: relative;
@@ -105,15 +122,14 @@ header {
 }
 .dropdown-menu {
   position: absolute;
-  top: 70%;
+  top: 75%;
   display: none;
   background-color: var(--lightblue);
   color: var(--white);
   width: 15rem;
   gap: 1rem;
   flex-direction: column;
-  padding: 1rem 0;
-  z-index: -1;
+  padding: 0.5rem 0 1rem 0;
   border-radius: 0 0 17px 17px;
 }
 .dropdown-menu ul {
@@ -177,7 +193,7 @@ header {
   .mobile-nav {
     background-color: var(--white);
     width: 100vw;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 7.4rem);
     z-index: 1;
   }
   .arrow-down {
@@ -221,6 +237,9 @@ header {
   .dropdown-menu ul li:hover {
     transform: translateX(10px);
     border-left: 1px solid #ccc;
+  }
+  #mainPage, .banner{
+    display: block !important;
   }
 }
 #mainPage {
@@ -349,7 +368,7 @@ header {
 }
 .last-news .news-item .news-text {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .last-news .news-item .news-text span::after {
   content: "...";
@@ -366,9 +385,9 @@ header {
   color: var(--white);
 }
 .visions .wrapper {
+  height: 38rem;
   display: flex;
   justify-content: space-between;
-  height: 38rem;
 }
 .visions .visions-info {
   background: var(--lightblue) url(../assets/img/logo/visions-bg.svg) no-repeat;
@@ -411,6 +430,7 @@ header {
     padding-top: 2rem;
   }
   .visions .wrapper {
+    height: max-content;
     flex-direction: column;
   }
   .visions .visions-right,
@@ -453,6 +473,7 @@ header {
 }
 .about .wrapper .item .item-title h6 {
   font-size: 1.5rem;
+  font-weight: 500;
   max-width: 10rem;
   padding-bottom: 1rem;
 }
@@ -548,16 +569,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 6px 0;
 }
 .swiper-slide .item {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   gap: 2rem;
   padding: 1rem;
   background-color: var(--white);
   border-radius: 1.6rem;
+  width: 25rem;
   box-shadow: 0px 2px 20px 1px rgba(128, 156, 182, 0.16);
 }
 .swiper-slide .item-img img {
@@ -636,6 +659,7 @@ header {
 .footer .copyright {
   text-align: center;
   font-weight: 300;
+  font-size: 1.1rem;
   padding-top: 3rem;
   font-family: "Euclid Circular A", sans-serif;
 }
