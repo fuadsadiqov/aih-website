@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azərbaycan İnvestisiya Holdinqi AİH - Rəsmi vebsayt</title>    
+    <link rel="icon" type="image/png" href="../aih-website/assets/img/logo/favicon.png" sizes="96x96">
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/home.page.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/header.css">
@@ -13,11 +15,10 @@
     <link rel="stylesheet" href="./style/footer.css">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Preloader -->
@@ -31,12 +32,12 @@
         <div class="container-fluid">
             <div class="header-top">
                 <div class="top-left">
-                    <a href="https://aih.gov.az/"><img src="./assets/img/logo/logo_header.png" alt="AIH logo"></a>
+                    <a href="./index.html"><img src="./assets/img/logo/logo_header.png" alt="AIH logo"></a>
                 </div>
                 <div class="top-right">
                     <img class="search-icon" id="search" src="./assets/img/icons/search.svg" alt="search">
                     <div class="search-box">
-                        <input type="text" class="search-input" placeholder="Axtarın">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Axtarın">
                         <img id="closeSearch" class="search-close-icon" src="./assets/img/icons/close.svg" alt="close">
                     </div>
                     <select class="language-option">
@@ -59,7 +60,7 @@
                                 <li><a href="https://aih.gov.az/haqqimizda/aih-azerbaycan-investisiya-holding-haqqinda">AİH haqqında</a></li>
                                 <li><a href="https://aih.gov.az/haqqimizda/aih-nizamname">Nizamnamə</a></li>
                                 <li><a href="https://aih.gov.az/haqqimizda/senedler">Sənədlər</a></li>
-                                <li><a href="https://aih.gov.az/haqqimizda/struktur">Struktur</a></li>
+                                <li><a href="./haqqimizda/struktur.html">Struktur</a></li>
                             </ul>
                         </div>
                     </li>
@@ -447,7 +448,7 @@
                             <li><a href="">AİH haqqında</a></li>
                             <li><a href="">Nizamnnamə</a></li>
                             <li><a href="">Missiya və dəyərlər</a></li>
-                            <li><a href="">Rəhbərlik</a></li>
+                            <li><a href="./haqqimizda/struktur.html">Rəhbərlik</a></li>
                         </ul>
                     </div>
                     <div class="item">

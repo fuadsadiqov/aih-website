@@ -1,0 +1,36 @@
+.struktur{
+    font-family: "Segoe UI", Arial, sans-serif;  
+}
+.struktur .switch-button button:first-child{
+    border-radius: 0.25rem 0rem 0rem 3.75rem;
+}
+.struktur .switch-button button:last-child{
+    background-color: var(--white);
+    color: var(--lightblue);
+    border-radius: 0rem 3.75rem 0.25rem 0rem;
+}
+.struktur .switch-button button.active{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+.tab{
+    display: none;
+}
+.active-tab{
+    display: block;
+}
+@media (max-width: 500px){
+    .item{
+        flex-direction: column;
+    }
+    .struktur .main-item .item-left{
+        border-right: none;
+    }
+    .struktur .item .item-left img{
+        max-height: 25rem;
+        max-width: 25rem;
+    }
+    .struktur .item .item-right{
+        max-width: 100%;
+    }
+}

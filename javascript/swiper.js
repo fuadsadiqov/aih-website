@@ -5,13 +5,13 @@ let swiper = new Swiper(".mySwiper", {
       200: {
         slidesPerView: 1,
       },
-      480: {
+      575: {
         slidesPerView: 2,
       },
-      640: {
+      1020: {
         slidesPerView: 3,
       },
-      991: {
+      1300: {
         slidesPerView: 4,
       }
     },
@@ -25,4 +25,10 @@ let swiper = new Swiper(".mySwiper", {
     },
     mousewheel: true,
     keyboard: true,
+    on: {
+      init: function () {
+        document.querySelector('.swiper-wrapper').style.backgroundColor =
+          '#FFF';
+      },
+    },
   });

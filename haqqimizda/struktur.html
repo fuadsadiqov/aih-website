@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müşahidə Şurası və İdarə Heyəti. Azərbaycan İnvestisiya Holdinqi </title>
+    <link rel="icon" type="image/png" href=".../assets/img/logo/favicon.png" sizes="96x96">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/struktur.page.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <img src="../assets/img/logo/preloader.svg" alt="">
+</div>
+<!-- Preloader -->
+<!-- Header -->
+<header class="header">
+        <div class="container-fluid">
+        <div class="header-top">
+            <div class="top-left">
+                <a href="../index.html"><img src="../assets/img/logo/logo_header.png" alt="AIH logo"></a>
+            </div>
+            <div class="top-right">
+                <img class="search-icon" id="search" src="../assets/img/icons/search.svg" alt="search">
+                <div class="search-box">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Axtarın">
+                    <img id="closeSearch" class="search-close-icon" src="../assets/img/icons/close.svg" alt="close">
+                </div>
+                <select class="language-option">
+                    <option value="AZ">AZ</option>
+                    <option value="EN">EN</option>
+                </select>
+                <button id="hamburgerMenu" class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <ul id="mobileList">
+                <li>
+                    <p class="nav-item dropdown">Haqqımızda <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="https://aih.gov.az/haqqimizda/aih-azerbaycan-investisiya-holding-haqqinda">AİH haqqında</a></li>
+                            <li><a href="https://aih.gov.az/haqqimizda/aih-nizamname">Nizamnamə</a></li>
+                            <li><a href="https://aih.gov.az/haqqimizda/senedler">Sənədlər</a></li>
+                            <li><a href="./haqqimizda/struktur.html">Struktur</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><p class="nav-item">Dövlət müəssisələri</p></li>
+                <li>
+                    <p class="nav-item dropdown">Media <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="https://aih.gov.az/media/xeberler">Xəbərlər</a></li>
+                            <li><a href="https://aih.gov.az/media/press-relizler">Press-relizlər</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><p class="nav-item">Karyera</p></li>
+                <li><p class="nav-item">Əlaqə</p></li>
+                <div class="mobile-language">
+                    <select>
+                        <option value="AZ">AZ</option>
+                        <option value="EN">EN</option>
+                    </select>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav"></div>
+</header>
+    <div id="mainPage">
+        <div class="struktur pt-6">
+            <div class="container">
+                <div class="page-location text-lg uppercase tracking-wider flex gap-2 text-black">
+                    <a href="./haqqimizda.html">Haqqımızda</a> <span>/</span> <span> Struktur</span>
+                </div>
+                <div class="page-title text-4xl font-semibold pt-5">
+                    <h2>Struktur</h2>
+                </div>
+                <div class="switch-button flex w-full justify-center mt-5">
+                    <button class="tab-button max-w-5xl h-14 w-full border-2 border-solid text-[#456CD9] border-[#456CD9] active text-md sm:text-xl font-semibold" onclick="openTab('tab1')">Müşahidə Şurası</button>
+                    <button class="tab-button max-w-5xl h-14 w-full border-2 border-solid text-[#456CD9] border-[#456CD9] text-md sm:text-xl font-semibold" onclick="openTab('tab2')">İdarə Heyəti</button>
+                </div>
+                <div class="struktur-tabs pt-9">
+                    <div class="tab active-tab" id="tab1">
+                        <div class="main-item item flex gap-8">
+                            <div class="item-left border-r-2 border-[#456CD9] w-60 pr-4">
+                                <img class="w-full h-full object-cover" src="../assets/img/struktur/Eli Esedov.png" alt="">
+                            </div>
+                            <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                <div class="news-name w-max">
+                                    Müşahidə Şurasının sədri
+                                </div>
+                                <div class="item-title text-[1.6rem] font-semibold py-4">
+                                    Əli Hidayət oğlu Əsədov
+                                </div>
+                                <div class="item-text text-lg font-normal text-[#798BA1]">
+                                    Azərbaycan Respublikasının Baş Naziri
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper my-9 grid gap-9 lg:grid-cols-2 grid-cols-1">
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Sahmar Movsumov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        Müşahidə Şurasının üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Şahmar Mövsümov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Azərbaycan Respublikası Prezidentinin köməkçisi, İqtisadi məsələlər və innovativ inkişaf siyasəti şöbəsinin müdiri
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Natiq Emirov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        Müşahidə Şurasının üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Natiq Əmirov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Azərbaycan Respublikası Prezidentinin köməkçisi, İqtisadi siyasət və sənaye məsələləri şöbəsinin müdiri
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Mikayil Cabbarov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        Müşahidə Şurasının üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Mikayıl Cabbarov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Azərbaycan Respublikasının İqtisadiyyat naziri
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Samir Serifov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        Müşahidə Şurasının üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Samir Şərifov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Azərbaycan Respublikasının Maliyyə naziri
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab2">
+                        <div class="wrapper my-9 grid gap-9 md:grid-cols-2 grid-cols-1">
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Metin Eynullayev.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        İdarə Heyətinin sədri
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Mətin Eynullayev
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        İqtisadiyyat Nazirliyi yanında Əmlak Məsələləri üzrə Dövlət Xidmətinin rəisi
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Elnur Eliyev.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        İdarə Heyətinin üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Elnur Əliyev
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        İqtisadiyyat nazirinin birinci müavini
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Azer Mursaqulov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        İdarə Heyətinin üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Azər Mursaqulov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Maliyyə Nazirliyi yanında Dövlət Borclarının və Maliyyə Öhdəliklərinin İdarə Edilməsi Agentliyinin direktoru
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item flex gap-8">
+                                <div class="item-left w-60">
+                                    <img class="w-full h-full object-cover" src="../assets/img/struktur/Ruslan Elixanov.png" alt="">
+                                </div>
+                                <div class="item-right flex flex-col justify-center max-w-sm w-full">
+                                    <div class="news-name w-max">
+                                        İdarə Heyətinin üzvü
+                                    </div>
+                                    <div class="item-title text-[1.6rem] font-semibold py-4">
+                                        Ruslan Əlixanov
+                                    </div>
+                                    <div class="item-text text-lg font-normal text-[#798BA1]">
+                                        Azərbaycan İnvestisiya Holdinqinin Baş icraçı direktoru
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- AOS JS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="../javascript/script.js"></script>
+ <script src="../javascript/swiper.js"></script>
+</body>
+</html>
