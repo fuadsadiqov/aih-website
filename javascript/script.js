@@ -20,6 +20,12 @@ searchIcon.addEventListener('click', () => {
 closeSearchIcon.addEventListener('click', () => {
   searchIcon.classList.remove('active')
 })
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape" && searchIcon.classList.contains('active')) {  
+    searchIcon.classList.remove('active')  
+  }
+});
+
 // Responsive dropdown
 function toggleDropdownOnClick() {
   const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
@@ -45,3 +51,9 @@ toggleDropdownOnResize();
 window.addEventListener('resize', toggleDropdownOnResize);
 // AOS
 AOS.init({once: true});
+// Preloader
+function hidePreloader() {
+  const preloader = document.getElementById('preloader')
+  preloader.classList.add('hide')
+}
+window.addEventListener('load', hidePreloader)

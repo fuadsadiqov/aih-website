@@ -1,0 +1,108 @@
+/* News */
+.news {
+    overflow-x: hidden !important;
+    padding-top: 7.2rem;
+    font-family: "Euclid Circular A", sans-serif !important;
+  }
+  .news .news-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+  }
+  .news .news-left img {
+    max-width: 60rem;
+    width: 100%;
+  }
+  .news .news-left {
+    padding-right: 2rem;
+    border-right: 0.25rem solid var(--lightblue);
+  }
+  .news .news-right {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .news .news-right .news-name {
+    width: 6.6rem;
+  }
+  .news .news-right .news-title {
+    line-height: 1.3em;
+    padding: 1rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--second-black);
+  }
+  .news .news-right .news-date,
+  .news-info {
+    color: #37425099;
+  }
+  .news .news-right .news-date {
+    padding: 0.6rem 0;
+  }
+  .news .news-right .news-info {
+    font-weight: 500;
+    font-size: 1.4rem;
+    max-width: 45rem;
+  }
+  /* Last News */
+  .last-news {
+    font-family: "Euclid Circular A", sans-serif !important;
+  }
+  .last-news .news-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0 1.5rem 0;
+  }
+  .last-news .news-title h4 {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  .last-news .news-title a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--second-black);
+  }
+  .last-news .news-title img {
+    width: 1.3rem;
+    margin-left: 0.5rem;
+  }
+  .last-news .news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  .last-news .news-item {
+    max-width: 38rem;
+    max-height: 40rem;
+    width: 100%;
+    height: 100%;
+  }
+  .last-news .news-item .news-img img {
+    max-width: 38rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .last-news .news-item .news-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  .last-news .news-item .news-date p {
+    color: var(--gray);
+    font-weight: 600;
+  }
+  .last-news .news-item .news-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .last-news .news-item .news-text span::after {
+    content: "...";
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.1rem;
+    display: inline-block;
+    overflow: hidden;
+  }
