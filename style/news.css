@@ -8,9 +8,6 @@
     display: flex;
     justify-content: center;
     gap: 3.5rem;
-  }
-  .news .news-left img {
-    max-width: 60rem;
     width: 100%;
   }
   .news .news-left {
@@ -105,4 +102,12 @@
     margin: 0 0.1rem;
     display: inline-block;
     overflow: hidden;
+  }
+  @media (max-width: 991px) {
+    .news .news-left{
+      border-right: none;
+    }
+    .news .news-right{
+      padding-top: 0;
+    }
   }
