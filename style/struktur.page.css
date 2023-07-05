@@ -22,15 +22,18 @@
 @media (max-width: 500px){
     .item{
         flex-direction: column;
+        align-items: center;
+    }
+    .news-name{
+        margin: 0 auto;
+        text-align: center;
     }
     .struktur .main-item .item-left{
         border-right: none;
     }
-    .struktur .item .item-left img{
-        max-height: 25rem;
-        max-width: 25rem;
-    }
-    .struktur .item .item-right{
-        max-width: 100%;
+    .item-right .item-title,
+    .item-right .item-text{
+        display: flex;
+        justify-content: center;
     }
 }

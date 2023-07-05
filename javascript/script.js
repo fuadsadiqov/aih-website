@@ -51,7 +51,7 @@ closeSearchIcon.addEventListener('click', () => {
 })
 document.addEventListener("keydown", function(event) {
   if (event.key === "f" && event.ctrlKey) {
-    searchIcon.classList.add('active')
+    searchIcon.classList.toggle('active')
     document.getElementById('searchInput').focus()
     event.preventDefault();
   }
