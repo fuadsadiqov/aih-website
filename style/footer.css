@@ -3,6 +3,7 @@
     background-color: var(--lightblue);
     color: var(--white);
     padding-bottom: 3rem;
+    margin-top: 5rem;
     font-family: "Segoe UI", sans-serif;
   }
   .footer a {
