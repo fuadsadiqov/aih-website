@@ -233,7 +233,7 @@ header{
     align-items: center;
     margin: 6px 0;
   }
-  .swiper-slide .item {
+  .swiper-slide .item a {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
