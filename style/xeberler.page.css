@@ -7,5 +7,13 @@
 }
 .news .news-wrapper .news-left{
     border-right: none;
-    padding-right: 0;
+}
+.popup-box{
+    display: none;
+}
+.popup-box.active{
+    display: flex;
+}
+*{
+    transition: none;
 }

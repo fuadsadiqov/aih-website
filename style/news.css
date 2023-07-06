@@ -69,6 +69,7 @@
   .last-news .news-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     gap: 2rem;
   }
   .last-news .news-item {
