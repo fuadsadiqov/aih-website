@@ -5,3 +5,7 @@
 .news .news-right{
     font-family: "Euclid Circular A", sans-serif;
 }
+.news .news-wrapper .news-left{
+    border-right: none;
+    padding-right: 0;
+}
