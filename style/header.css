@@ -216,6 +216,9 @@ header {
     .nav-item.active .arrow-down {
       rotate: 180deg;
     }
+    .dropdown-menu{
+      box-shadow: none;
+    }
     .dropdown-menu > ul {
       position: relative;
       flex-direction: column;
