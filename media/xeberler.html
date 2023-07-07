@@ -161,13 +161,19 @@
                           <img src="../assets/img/icons/close.svg" id="closePopup" class="cursor-pointer" alt="Close icon">
                         </div>
                         <p class="mb-4 flex pt-2 gap-8">
-                          <img class="w-[2.5rem]" id="linkedin" src="../assets/img/social-media/linkedin-colourful.svg" alt="Linkedin">
-                          <img class="w-[2.5rem]" id="twitter" src="../assets/img/social-media/twitter-colourful.svg" alt="Twitter">
-                          <img class="w-[2.5rem]" id="facebook" onclick="shareFacebook()" src="../assets/img/social-media/facebook-colourful.svg" alt="Facebook">
+                          <a id="linkedin" href="#">
+                            <img class="w-[2.5rem]" id="linkedin" src="../assets/img/social-media/linkedin-colourful.svg" alt="Linkedin">
+                          </a>
+                          <a id="twitter" href="#">
+                            <img class="w-[2.5rem]" id="twitter" src="../assets/img/social-media/twitter-colourful.svg" alt="Twitter">
+                          </a>
+                          <a id="facebook" href="#">
+                            <img class="w-[2.5rem]" id="facebook" onclick="shareFacebook()" src="../assets/img/social-media/facebook-colourful.svg" alt="Facebook">
+                          </a>
                         </p>
                         <div class="flex gap-4">
                           <p id="urlInput" class="p-2 bg-gray-50"></p> 
-                          <button onclick="copyURL()">Copy</button>
+                          <button class="news-name" onclick="copyURL()">Kopyalayın</button>
                         </div>
                       </div>
                     </div>

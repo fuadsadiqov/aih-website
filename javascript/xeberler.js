@@ -2,6 +2,7 @@ const openPopupBtn = document.getElementById('openPopup');
 const closePopupBtn = document.getElementById('closePopup');
 const popup = document.getElementById('popup');
 const url = document.URL
+let encodedUrl = encodeURIComponent(url)
 const linkedin = document.querySelector('#linkedin')
 const twitter = document.querySelector('#twitter')
 
@@ -24,23 +25,21 @@ function getUrlHref(){
 function copyURL(){
     navigator.clipboard.writeText(url)
 }
-function shareFacebook(){
-    const facebook = document.querySelector('#facebook')
-    let postUrl = encodeURI(url)
-    let postTitle = encodeURI('Share this post')
-    let postImg = encodeURI(facebook.src)
-    console.log(postImg);
-    console.log(postTitle);
-    console.log(postUrl);
-    console.log(
-        facebook.setAttribute(
-            'href',
-            `https://www.facebook.com/sharer.php?u=${postUrl}`
-        )
-
-    );
-}
 getUrlHref()  
-// 
-// https://twitter.com/share?url=[post-url]&text=[post-title]&via=[via]&hashtags=[hashtags]
-// https://www.linkedin.com/shareArticle?url=[post-url]&title=[post-title]
+document.getElementById("linkedin").addEventListener("click", function(event) {
+    event.preventDefault();
+    var linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url${encodedUrl}`;
+    window.location.href = linkedinShareUrl;
+  });
+document.getElementById("twitter").addEventListener("click", function(event) {
+    event.preventDefault();
+    let postTitle = ''
+    
+    var twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}`;
+    window.location.href = twitterShareUrl;
+  });
+document.getElementById("facebook").addEventListener("click", function(event) {
+    event.preventDefault();
+    var facebookShareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodedUrl;
+    window.location.href = facebookShareUrl;
+  });
