@@ -11,7 +11,6 @@ const notifications = document.getElementById('notifications')
 openPopupBtn.addEventListener('click', () => {
   popup.classList.toggle('active');
 });
-
 closePopupBtn.addEventListener('click', () => {
   popup.classList.remove('active');
 });
@@ -46,3 +45,8 @@ document.getElementById("facebook").addEventListener("click", function(event) {
     var facebookShareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodedUrl;
     window.location.href = facebookShareUrl;
   });
+document.addEventListener(('click'), (e) => {
+    if(popup.classList.contains('active') && !document.getElementById('popup-content').contains(e.target) && !openPopupBtn.contains(e.target)){
+        popup.classList.remove('active')
+    }
+})
