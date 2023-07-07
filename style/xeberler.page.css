@@ -10,13 +10,16 @@
     padding-right: 0;
 }
 .popup-box{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in, visibility 0s linear 0.2s;
+
 }
 .popup-box.active{
-    display: flex;
-}
-*{
-    transition: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease-out, visibility 0s linear;
+
 }
 .notifications{
     display: none;
