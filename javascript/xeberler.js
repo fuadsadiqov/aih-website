@@ -5,7 +5,9 @@ const url = document.URL
 let encodedUrl = encodeURIComponent(url)
 const linkedin = document.querySelector('#linkedin')
 const twitter = document.querySelector('#twitter')
+const notifications = document.getElementById('notifications')
 
+// Open and close pop up
 openPopupBtn.addEventListener('click', () => {
   popup.classList.toggle('active');
 });
@@ -18,14 +20,17 @@ document.addEventListener('keydown', e => {
         popup.classList.remove('active')
     }
 })
-
-function getUrlHref(){
-    document.getElementById('urlInput').innerText = url
-}
+// Copy url
 function copyURL(){
     navigator.clipboard.writeText(url)
+    notifications.style.display = 'block'
+    setTimeout(() => {
+        notifications.style.display = 'none'
+    }, 1000);
 }
-getUrlHref()  
+
+document.getElementById('urlInput').innerText = window.location.href
+// Share functions
 document.getElementById("linkedin").addEventListener("click", function(event) {
     event.preventDefault();
     var linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url${encodedUrl}`;
@@ -33,8 +38,6 @@ document.getElementById("linkedin").addEventListener("click", function(event) {
   });
 document.getElementById("twitter").addEventListener("click", function(event) {
     event.preventDefault();
-    let postTitle = ''
-    
     var twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}`;
     window.location.href = twitterShareUrl;
   });

@@ -17,3 +17,14 @@
 *{
     transition: none;
 }
+.notifications{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
