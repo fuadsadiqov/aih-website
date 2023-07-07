@@ -6,7 +6,7 @@ const wholePage = document.getElementById('mainPage');
 const banner = document.getElementById('banner');
 const searchIcon = document.getElementById('search')
 const closeSearchIcon = document.getElementById('closeSearch')
-
+let currentYear = document.getElementById('currentYear')
 hamburgerMenu.addEventListener('click', () => {
   const isNavVisible = mobileNav.style.display === 'flex';
   hamburgerMenu.classList.toggle('open')
@@ -91,3 +91,6 @@ function openTab(tabId){
     }
   })
 }
+// Current Year
+let dt = new Date()
+currentYear.innerText = dt.getFullYear()

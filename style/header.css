@@ -4,6 +4,10 @@ header {
     font-family: "Segoe UI", Arial, sans-serif;
     padding-bottom: 0.5rem;
   }
+  header *{
+    transition: 0.2s all !important;
+
+  }
 
   .header-top {
     position: relative;
