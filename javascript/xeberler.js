@@ -32,7 +32,7 @@ document.getElementById('urlInput').innerText = window.location.href
 // Share functions
 document.getElementById("linkedin").addEventListener("click", function(event) {
     event.preventDefault();
-    var linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url${encodedUrl}`;
+    var linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
     window.location.href = linkedinShareUrl;
   });
 document.getElementById("twitter").addEventListener("click", function(event) {
