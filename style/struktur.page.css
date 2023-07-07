@@ -16,7 +16,7 @@
 .struktur .switch-button button:hover{
     background-color: rgba(69, 108, 217, 0.15);
 }
-.struktur .switch-button button.active:hover{
+.struktur .switch-button button.active:hover{   
     background-color: var(--lightblue);
 }
 .tab{
@@ -24,6 +24,18 @@
 }
 .active-tab{
     display: block;
+}
+.struktur .wrapper.musahide-heyeti .item:first-child{
+    grid-column: span 2 / span 2;
+}
+.struktur .wrapper .item:first-child .item-left img{
+    border-right: 2px solid var(--lightblue);
+    padding-right: 2rem;    
+}
+@media (max-width: 991px){
+    .struktur .wrapper.musahide-heyeti .item:first-child{
+        grid-column: 1;
+    }
 }
 @media (max-width: 500px){
     .item{
@@ -34,7 +46,7 @@
         margin: 0 auto;
         text-align: center;
     }
-    .struktur .main-item .item-left{
+    .struktur .wrapper .item:first-child .item-left img{
         border-right: none;
     }
     .item-right .item-title,

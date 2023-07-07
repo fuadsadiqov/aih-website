@@ -30,6 +30,13 @@
     padding: 0.5rem 1rem;
 }
 .news-right .item {
-    max-height: 5rem;
-    overflow-y: hidden;
-}
+    overflow: hidden;
+  }
+  
+  .news-right .item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
