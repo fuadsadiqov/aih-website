@@ -138,13 +138,13 @@
           <h2>Xəbərlər</h2>
         </div>
       </div>
-      <div class="news text-[#374250] pt-4">
+      <div class="news-detail text-[#374250] pt-4">
         <div class="container overflow-y-hidden">
-          <div class="news-wrapper flex flex-col md:flex-row gap-8">
+          <div class="news-wrapper flex flex-col md:flex-row gap-[5rem]">
             <div class="news-left border-r-none md:w-9/12 w-full">
               <div class="main-news">
-                <div class="news-title max-w-[80rem]">
-                  <h1 class="text-4xl leading-tight max-w-[80rem]">
+                <div class="news-title">
+                  <h1 class="text-4xl leading-tight">
                     AZAL və “Boeing” 8 ədəd “787-8 Dreamliner” təyyarəsinin
                     tədarükünə dair razılıq əldə edib
                   </h1>
@@ -152,27 +152,27 @@
                     <div class="text-[#798BA1]">10 May 2023 12:36</div>
                     <button id="openPopup" class="flex gap-3">
                       <img src="../assets/img/icons/share.svg" alt="share icon"/>
-                      <span class="text-md">Paylaş</span>
+                      <span class="text-xl">Paylaş</span>
                     </button>
                     <div id="popup" class="fixed popup-box z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
                       <div id="popup-content" class="bg-white py-6 px-8">  
                         <div class="flex justify-between">
                           <h2 class="text-2xl font-bold mb-4">Paylaşın</h2>
-                          <img src="../assets/img/icons/close.svg" id="closePopup" class="cursor-pointer" alt="Close icon">
+                          <img src="../assets/img/icons/close.svg" id="closePopup" class="cursor-pointer -translate-y-3 translate-x-1" alt="Close icon">
                         </div>
                         <p class="mb-4 flex pt-2 gap-8">
-                          <a id="linkedin" href="#">
+                          <a target="_blank" id="linkedin" href="#">
                             <img class="w-[2.5rem]" id="linkedin" src="../assets/img/social-media/linkedin-colourful.svg" alt="Linkedin">
                           </a>
-                          <a id="twitter" href="#">
+                          <a target="_blank" id="twitter" href="#">
                             <img class="w-[2.5rem]" id="twitter" src="../assets/img/social-media/twitter-colourful.svg" alt="Twitter">
                           </a>
-                          <a id="facebook" href="#">
+                          <a target="_blank" id="facebook" href="#">
                             <img class="w-[2.5rem]" id="facebook" onclick="shareFacebook()" src="../assets/img/social-media/facebook-colourful.svg" alt="Facebook">
                           </a>
                         </p>
-                        <div class="flex gap-4">
-                          <p id="urlInput" onclick="copyURL()"  class="p-2 bg-gray-50"></p> 
+                        <div class="flex gap-4 w-full max-w-[30rem]">
+                          <p id="urlInput" onclick="copyURL()"  class="p-2 bg-gray-50 overflow-x-hidden w-[15rem]"></p> 
                           <button onclick="copyURL()">Kopyalayın</button>
                           <p id="notifications" class="notifications">Link kopyalandı</p>
                         </div>
@@ -181,8 +181,8 @@
                   </div>
                 </div>
                 <div>
-                  <img class="max-w-[80rem] w-full" src="../assets/img/news/main-news.png" alt="News image" />
-                  <div class="item-text max-w-[80rem]">
+                  <img class="w-full" src="../assets/img/news/main-news.png" alt="News image" />
+                  <div class="item-text ">
                     <p class="py-4 text-xl">
                       AZAL və “Boeing” 8 ədəd “787-8 Dreamliner” təyyarəsinin
                       tədarükünə dair razılıq əldə edib. Aviaşirkətin uzun
@@ -246,92 +246,92 @@
               <div class="wrapper py-6 flex flex-col gap-8">
                 <div class="item flex text-xl">
                   <p class="font-bold">
-                    <span class="font-medium text-[#798BA1]">10/06/23</span>                
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    <span class="font-medium text-[#768BA1]">10/06/23</span>                
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
+                  </p>
+                </div>
+                <div class="item flex text-xl">
+                  <p class="font-bold">
+                    <span class="font-medium   text-[#768BA1]">10/06/23</span>
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
                 <div class="item flex text-xl">
                   <p class="font-bold">
                     <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
-                  </p>
-                </div>
-                <div class="item flex text-xl">
-                  <p class="font-bold">
-                    <span class="font-medium text-[#768BA1]">10/06/23</span>
-                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib
+                    “ASCO istiqrazları”nın təqdimat mərasimi keçirilib Azərbaycan İnvestisiya Holdinqinin (AİH) Baş icraçı direktoru Ruslan Əlixanov Beynəlxalq Valyuta Fondunun (BVF) Azərbaycan üzrə yeni təyin olunan missiya rəhbəri xanım Anna Bordonun başçılıq etdiyi nümayəndə heyəti ilə görüşüb.
                   </p>
                 </div>
               </div>
@@ -341,6 +341,7 @@
         <div class="last-news">
               <div class="news-title">
                   <h4>Son media</h4>
+                  <a href="">Bütün media <img src="../assets/img/icons/arrow-right.svg" alt="arrow-right"></a>
               </div>
               <div class="news-wrapper">
                   <div data-aos="fade-up" data-aos-duration="500" class="news-item">

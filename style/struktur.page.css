@@ -13,6 +13,12 @@
     background-color: var(--lightblue);
     color: var(--white);
 }
+.struktur .switch-button button:hover{
+    background-color: rgba(69, 108, 217, 0.15);
+}
+.struktur .switch-button button.active:hover{
+    background-color: var(--lightblue);
+}
 .tab{
     display: none;
 }
