@@ -1,0 +1,45 @@
+.main-news{
+    font-family: 'Segoe UI', sans-serif;
+}
+.main-news .news-title .title-bottom,
+.news .news-right{
+    font-family: "Euclid Circular A", sans-serif;
+}
+.news .news-wrapper .news-left{
+    border-right: none;
+    padding-right: 0;
+}
+.popup-box{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in, visibility 0s linear 0.2s;
+
+}
+.popup-box.active{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease-out, visibility 0s linear;
+
+}
+.notifications{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+.news-right .item {
+    overflow: hidden;
+}
+  
+.news-right .item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
