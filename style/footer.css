@@ -27,6 +27,10 @@
     gap: 2rem;
     padding-top: 2rem;
   }
+  .footer .wrapper .item .social-media a{
+    display: flex;
+    align-items: center;
+  }
   .footer .wrapper .item p {
     font-size: 1.6rem;
     font-weight: 300;
