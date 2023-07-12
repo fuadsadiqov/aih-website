@@ -1,18 +1,19 @@
-header{
+.home-header{
   height: 60rem;
+  background: url(../assets/img/logo/headder-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header{
   background-color: transparent !important;
 }
-.bg {
-    background: url(../assets/img/logo/headder-bg.png) no-repeat;
-    height: 60rem;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+.home-header-background{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
   /* Banner */
 .banner {
     padding-top: 3.2rem;
