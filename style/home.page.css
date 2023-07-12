@@ -185,9 +185,9 @@ header{
     justify-content: space-evenly;
   }
   .portfel .item .item-img img {
+    width: 10%;
+    aspect-ratio: 3/2;
     object-fit: contain;
-    height: 5rem;
-    width: 12rem;
   }
   @media (max-width: 768px) {
     .portfel .wrapper .item:nth-child(odd) .title,

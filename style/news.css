@@ -75,7 +75,7 @@
   }
   .last-news .news-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
   .last-news .news-item {
@@ -99,16 +99,12 @@
     font-weight: 600;
   }
   .last-news .news-item .news-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     font-size: 1.6rem;
     font-weight: 500;
-  }
-  .last-news .news-item .news-text span::after {
-    content: "...";
-    width: 2rem;
-    height: 2rem;
-    margin: 0 0.1rem;
-    display: inline-block;
-    overflow: hidden;
   }
   @media (max-width: 991px) {
     .news .news-left{
