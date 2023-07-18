@@ -1,95 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Müşahidə Şurası və İdarə Heyəti. Azərbaycan İnvestisiya Holdinqi </title>
     <link rel="icon" type="image/png" href=".../assets/img/logo/favicon.png" sizes="96x96">
     <!-- CSS -->
-    <link rel="stylesheet" href="../style/struktur.page.css">
+    <link rel="stylesheet" href="../style/about.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/about.page.css">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Preloader -->
-<div id="preloader">
-    <img src="../assets/img/logo/preloader.svg" alt="">
-</div>
-<!-- Preloader -->
-<!-- Header -->
-<header class="header"> 
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="../assets/img/logo/preloader.svg" alt="">
+    </div>
+    <!-- Preloader -->
+    <!-- Header -->
+    <header class="header">
         <div class="container-fluid">
-        <div class="header-top">
-            <div class="top-left">
-                <a href="../index.html"><img src="../assets/img/logo/logo_header.png" alt="AIH logo"></a>
-            </div>
-            <div class="top-right">
-                <img class="search-icon" id="search" src="../assets/img/icons/search.svg" alt="search">
-                <div class="search-box">
-                    <input type="text" class="search-input" id="searchInput" placeholder="Axtarın">
-                    <img id="closeSearch" class="search-close-icon" src="../assets/img/icons/close.svg" alt="close">
+            <div class="header-top">
+                <div class="top-left">
+                    <a href="../index.html"><img src="../assets/img/logo/logo_header.png" alt="AIH logo"></a>
                 </div>
-                <select class="language-option">
-                    <option value="AZ">AZ</option>
-                    <option value="EN">EN</option>
-                </select>
-                <button id="hamburgerMenu" class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <ul id="mobileList">
-                <li>
-                    <p class="nav-item dropdown">Haqqımızda <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li><a href="../haqqimizda/aih-haqqinda.html">AİH haqqında</a></li>
-                            <li><a href="../haqqimizda/aih-nizamname.html">Nizamnamə</a></li>
-                            <li><a href="../haqqimizda/senedler.html">Sənədlər</a></li>
-                            <li><a href="../haqqimizda/struktur.html">Struktur</a></li>
-                        </ul>
+                <div class="top-right">
+                    <img class="search-icon" id="search" src="../assets/img/icons/search.svg" alt="search">
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Axtarın">
+                        <img id="closeSearch" class="search-close-icon" src="../assets/img/icons/close.svg" alt="close">
                     </div>
-                </li>
-                <li><p class="nav-item">Dövlət müəssisələri</p></li>
-                <li>
-                    <p class="nav-item dropdown">Media <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li><a href="../media/xeberler.html">Xəbərlər</a></li>
-                            <li><a href="../media/press-relizler.html">Press-relizlər</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><p class="nav-item">Karyera</p></li>
-                <li><p class="nav-item">Əlaqə</p></li>
-                <div class="mobile-language">
-                    <select>
+                    <select class="language-option">
                         <option value="AZ">AZ</option>
                         <option value="EN">EN</option>
                     </select>
+                    <button id="hamburgerMenu" class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-            </ul>
+            </div>
+            <div class="header-bottom">
+                <ul id="mobileList">
+                    <li>
+                        <p class="nav-item dropdown">Haqqımızda <img class="arrow-down"
+                                src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="../haqqimizda/aih-haqqinda.html">AİH haqqında</a></li>
+                                <li><a href="../haqqimizda/aih-nizamname.html">Nizamnamə</a></li>
+                                <li><a href="../haqqimizda/senedler.html">Sənədlər</a></li>
+                                <li><a href="../haqqimizda/struktur.html">Struktur</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="nav-item">Dövlət müəssisələri</p>
+                    </li>
+                    <li>
+                        <p class="nav-item dropdown">Media <img class="arrow-down"
+                                src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="../media/xeberler.html">Xəbərlər</a></li>
+                                <li><a href="../media/press-relizler.html">Press-relizlər</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="nav-item">Karyera</p>
+                    </li>
+                    <li>
+                        <p class="nav-item">Əlaqə</p>
+                    </li>
+                    <div class="mobile-language">
+                        <select>
+                            <option value="AZ">AZ</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="mobile-nav" id="mobileNav"></div>
-</header>
+        <div class="mobile-nav" id="mobileNav"></div>
+    </header>
     <div id="mainPage">
         <div class="container pt-8">
             <div class="page-location text-lg uppercase tracking-wider flex gap-2 text-[#374250]">
-                <a href="./aih-haqqinda.html">Haqqımızda</a> <span class="text-[#456CD9]">/</span> <span> AİH Haqqında</span>
+                <a href="./aih-haqqinda.html">Haqqımızda</a> <span class="text-[#456CD9]">/</span> <span> AİH
+                    Haqqında</span>
             </div>
             <div class="page-title text-4xl text-[#374250] font-semibold pt-5">
                 <h2>AIH Haqqında</h2>
+            </div>
+        </div>
+        <div class="about-top">
+            <div class="img-wrapper">
+                <div class="img-item"><img src="../assets/img/about/about-4.png" alt="About image"></div>
+                <div class="img-item"><img src="../assets/img/about/about-3.png" alt="About image"></div>
+                <div class="img-item"><img src="../assets/img/about/about-2.png" alt="About image"></div>
+                <div class="img-item"><img src="../assets/img/about/about-1.png" alt="About image"></div>
+            </div>
+            <div class="container">
+                <div class="about-text">
+                    <p>
+                        <b>Azərbaycan İnvestisiya Holdinqi</b> onun idarəetməsinə verilmiş dövlət şirkətlərinin və
+                        müəssisələrinin, dövlət payı olan təsərrüfat cəmiyyətlərinin vahid prinsiplər əsasında idarə
+                        edilməsi, fəaliyyətinin təkmilləşdirilməsi, o cümlədən həyata keçirdikləri investisiya
+                        proqramlarının şəffaflığının və iqtisadi səmərəsinin yüksəldilməsi, onların rəqabət
+                        qabiliyyətinin təmin olunması, maliyyə sağlamlığının və dayanıqlılığının yaxşılaşdırılması
+                        sahəsində fəaliyyət göstərən publik hüquqi şəxsdir.
+                    </p>
+                    <p>
+                        "Azərbaycan İnvestisiya Holdinqi" Azərbaycan Respublikasının Prezidenti İlham Əliyevin 2020-ci
+                        il avqustun 7-də imzaladığı fərmanla təşkil olunmuşdur. Fərmanla “Azərbaycan İnvestisiya
+                        Holdinqi” publik hüquqi şəxs kimi yaradılıb.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="visions">
+            <div class="wrapper">
+                <div class="visions-info">
+                    <div class="container">
+                        <div data-aos="fade-right" class="visions-title">
+                            <h2>MİSSİYAMIZ</h2>
+                            <div class="visions-text">
+                                <p>
+                                    AİH-nin mədəni dəyərlərini bölüşən peşəkar
+                                    və məqsədyönlü komanda tərəfindən həyata
+                                    keçirilən şəffaf investisiya prosesləri
+                                    vasitəsilə Azərbaycanın uzunmüddətli
+                                    inkişafına və firavanlığının artımına
+                                    xidmət etmək.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visions-right">
+                    <img data-aos="fade-left" src="../assets/img/visions.png" alt="Visions">
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="about-title">
+                    <h3>Baxışımız</h3>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Portfel şirkətlərinin effektiv şəkildə inkişafını
+                        təmin etməklə Azərbaycanın rifahının köklü və
+                        dayanıqlı artımını təmin etmək. 
+                    </p>
+                </div>
+                <div class="about-title">
+                    <h3>Dəyərlərimiz</h3>
+                </div>
+                <div class="wrapper">
+                    <div class="item">
+                        <div class="item-title">
+                            <h6>Peşəkarlıq və meritokratiya</h6>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="item-text">
+                            <p>
+                                AİH ən yüksək peşəkarlıq standartlarının
+                                tətbiqini təşviq edir və yalnız meritokratiya
+                                prinsipi əsasında fəaliyyət göstərir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h6>Komanda işi</h6>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="item-text">
+                            <p>
+                                AİH effektiv komanda işinin davamlı inkişaf
+                                və müvəffəqiyyət üçün həlledici olduğunu
+                                qəbul edərək əməkdaşlıq və birliyi təşviq edir
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h6>Məqsədyönlülük</h6>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="item-text">
+                            <p>
+                                AİH portfel aktivlərində ən qabaqcıl
+                                təcrübələri tətbiq etməklə və
+                                mənimsəməklə əzmlə onların inkişafına çalışır. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h6>Etimad</h6>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="item-text">
+                            <p>
+                                AİH güclü və faydalı əlaqələrin qurulmasına
+                                şərait yaradan qarşılıqlı dəstək və
+                                etimad mühiti yaratmağı prioritetləşdirir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h6>Şəffaflıq</h6>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="item-text">
+                            <p>
+                                AİH öz fəaliyyətini ən yüksək şəffaflıq və
+                                dürüstlük standartlarına uyğun olaraq
+                                həyata keçirir. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -97,12 +237,17 @@
                 <div class="wrapper">
                     <div class="item">
                         <div class="footer-logo">
-                            <a href="https://aih.gov.az/"><img src="../assets/img/logo/logo_header.png" alt="Footer-logo"></a>
+                            <a href="https://aih.gov.az/"><img src="../assets/img/logo/logo_header.png"
+                                    alt="Footer-logo"></a>
                         </div>
                         <div class="social-media">
-                            <a target="_blank" href="https://www.linkedin.com/company/azerbaijan-investment-holding/mycompany/"><img src="../assets/img/social-media/linkedin.svg" alt="Linkedin"></a>
-                            <a target="_blank" href="https://twitter.com/AzInvestHolding"><img src="../assets/img/social-media/twitter.svg" alt="Twitter"></a>
-                            <a target="_blank" href="https://www.facebook.com/AzerbaijanInvestmentHolding/"><img src="../assets/img/social-media/facebook.svg" alt="Facebook"></a>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/company/azerbaijan-investment-holding/mycompany/"><img
+                                    src="../assets/img/social-media/linkedin.svg" alt="Linkedin"></a>
+                            <a target="_blank" href="https://twitter.com/AzInvestHolding"><img
+                                    src="../assets/img/social-media/twitter.svg" alt="Twitter"></a>
+                            <a target="_blank" href="https://www.facebook.com/AzerbaijanInvestmentHolding/"><img
+                                    src="../assets/img/social-media/facebook.svg" alt="Facebook"></a>
                         </div>
                     </div>
                     <div class="item">
@@ -138,19 +283,23 @@
                         </ul>
                     </div>
                     <div class="item">
-                        <a target="_blank" href="https://maps.google.com/maps?q=Azərbaycan pr. 6, Bakı, Azərbaycan">Azərbaycan pr. 6, <br>
+                        <a target="_blank"
+                            href="https://maps.google.com/maps?q=Azərbaycan pr. 6, Bakı, Azərbaycan">Azərbaycan pr. 6,
+                            <br>
                             Bakı, Azərbaycan</a>
                         <a href="mailto:info@aih.az">info@aih.az</a>
                     </div>
                 </div>
-                <p class="copyright"><span id="currentYear"></span> © Azərbaycan İnvestisiya Holdinqi. Bütün hüquqlar qorunur.</p>
+                <p class="copyright"><span id="currentYear"></span> © Azərbaycan İnvestisiya Holdinqi. Bütün hüquqlar
+                    qorunur.</p>
             </div>
         </footer>
     </div>
 
- <!-- AOS JS -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script src="../javascript/script.js"></script>
- <script src="../javascript/swiper.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/swiper.js"></script>
 </body>
+
 </html>

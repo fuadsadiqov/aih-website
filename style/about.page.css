@@ -1,0 +1,33 @@
+.about-top{
+    padding-top: 2rem;
+}
+.about-top .img-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+.about-top .img-wrapper .img-item{
+    width: 100%;
+}
+.about-top .img-wrapper .img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-top .about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-top .about-text p{
+    max-width: 100rem;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.01em;
+    padding: 1rem;
+    color: #374250;
+}
+.footer{
+    margin-top: 0;
+}
