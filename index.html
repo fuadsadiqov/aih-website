@@ -7,12 +7,12 @@
     <link rel="icon" type="image/png" href="../aih-website/assets/img/logo/favicon.png" sizes="96x96">
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/home.page.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/news.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/home.page.css">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS -->
@@ -27,18 +27,17 @@
       </div>
     <!-- Preloader -->
     <!-- Header -->
-    <div class="home-header">z
-        <header class="header">
-            <div class="container-fluid">
+    <header class="header">
+        <div class="container-fluid">
             <div class="header-top">
                 <div class="top-left">
-                    <a href="../index.html"><img src="../assets/img/logo/logo_header.png" alt="AIH logo"></a>
+                    <a href="./index.html"><img src="./assets/img/logo/logo_header.png" alt="AIH logo"></a>
                 </div>
                 <div class="top-right">
-                    <img class="search-icon" id="search" src="../assets/img/icons/search.svg" alt="search">
+                    <img class="search-icon" id="search" src="./assets/img/icons/search.svg" alt="search">
                     <div class="search-box">
                         <input type="text" class="search-input" id="searchInput" placeholder="Axtarın">
-                        <img id="closeSearch" class="search-close-icon" src="../assets/img/icons/close.svg" alt="close">
+                        <img id="closeSearch" class="search-close-icon" src="./assets/img/icons/close.svg" alt="close">
                     </div>
                     <select class="language-option">
                         <option value="AZ">AZ</option>
@@ -54,7 +53,7 @@
             <div class="header-bottom">
                 <ul id="mobileList">
                     <li>
-                        <p class="nav-item dropdown">Haqqımızda <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                        <p class="nav-item dropdown">Haqqımızda <img class="arrow-down" src="./assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a href="../haqqimizda/aih-haqqinda.html">AİH haqqında</a></li>
@@ -66,7 +65,7 @@
                     </li>
                     <li><p class="nav-item">Dövlət müəssisələri</p></li>
                     <li>
-                        <p class="nav-item dropdown">Media <img class="arrow-down" src="../assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
+                        <p class="nav-item dropdown">Media <img class="arrow-down" src="./assets/img/icons/arrow-down.svg" alt="arrow-down"></p>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a href="../media/xeberler.html">Xəbərlər</a></li>
@@ -83,31 +82,36 @@
                         </select>
                     </div>
                 </ul>
-            </div>
+                <!-- For new version -->
+                <div class="social-media">
+                    <a target="_blank" href="https://www.linkedin.com/company/azerbaijan-investment-holding/mycompany/"><img src="./assets/img/social-media/linkedin.svg" alt="Linkedin"></a>
+                    <a target="_blank" href="https://twitter.com/AzInvestHolding"><img src="./assets/img/social-media/twitter.svg" alt="Twitter"></a>
+                    <a target="_blank" href="https://www.facebook.com/AzerbaijanInvestmentHolding/"><img src="./assets/img/social-media/facebook.svg" alt="Facebook"></a>
+                </div>
+                <!-- For new version -->
         </div>
-        <div class="mobile-nav" id="mobileNav"></div>
-        </header>
-        <div id="banner" class="banner">
-            <div class="container">
-                <div class="banner-top">
-                    <h1 class="font-bold">Azərbaycan İnvestisiya Holdinqi</h1>
-                </div>
-                <div class="banner-text">
-                   <p>
-                    Azərbaycan İnvestisiya Holdinqi onun idarəetməsinə verilmiş 
-                    dövlət şirkətlərinin Azərbaycan hökumətinin milli sosial-iqtisadi 
-                    prioritetləri üzərində qurulmuş vahid prinsiplər əsasında idarə 
-                    edilməsi məqsədilə təsis edilmiş publik hüquqi şəxsdir.
-                   </p>
-                </div>
-                <div class="banner-bottom">
-                    <button class="btn btn-blue text-xl">Haqqımızda</button>
-                    <button class="btn btn-white text-xl">Əlaqə</button>
-                </div>
-            </div>
-        </div>
-        <div class="home-header-background"></div>
     </div>
+    <div class="mobile-nav" id="mobileNav"></div>
+    <div id="banner" class="banner">
+        <div class="container">
+            <div class="banner-top">
+                <h1 class="font-bold">Azərbaycan İnvestisiya Holdinqi</h1>
+            </div>
+            <div class="banner-text">
+                <p>
+                Azərbaycan İnvestisiya Holdinqi onun idarəetməsinə verilmiş 
+                dövlət şirkətlərinin Azərbaycan hökumətinin milli sosial-iqtisadi 
+                prioritetləri üzərində qurulmuş vahid prinsiplər əsasında idarə 
+                edilməsi məqsədilə təsis edilmiş publik hüquqi şəxsdir.
+                </p>
+            </div>
+            <div class="banner-bottom">
+                <button class="btn btn-blue text-xl">Haqqımızda</button>
+                <button class="btn btn-white text-xl">Əlaqə</button>
+            </div>
+        </div>
+    </div>
+    </header>
     <!-- News -->
     <div id="mainPage">
         <div class="news">
@@ -403,30 +407,6 @@
                             </div>
                             <div class="item-text">
                                 <p>Heydər Əliyev Fondu</p>
-                            </div>
-                        </a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="item">
-                            <a target="_blank" href="https://www.virtualkarabakh.az/">
-                            <div class="item-img">
-                                <img src="./assets/img/links/virtual-qarabag.png" alt="Virtual Qarabag">
-                            </div>
-                            <div class="item-text">
-                                <p>Virtual Qarabağ</p>
-                            </div>
-                        </a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="item">
-                            <a target="_blank" href="https://azerbaijan.az/">
-                            <div class="item-img">
-                                <img src="./assets/img/links/azerbaycan.png" alt="Azerbaycan">
-                            </div>
-                            <div class="item-text">
-                                <p>Azərbaycan</p>
                             </div>
                         </a>
                         </div>
